@@ -1,35 +1,37 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 :root {
-  --bg: #F7F1E8;
+  --bg: #f7f1e8;
   --card-bg: #fff;
-  --card-border: #E3D7C2;
-  --text: #2A241C;
-  --text-muted: #8A7F6B;
-  --btn-carte-bg: #C1272D;
-  --btn-carte-text: #F7F1E8;
+  --card-border: #e3d7c2;
+  --text: #2a241c;
+  --text-muted: #8a7f6b;
+  --btn-carte-bg: #c1272d;
+  --btn-carte-text: #f7f1e8;
   --search-bg: #fff;
-  --tag-gratuit-bg: #F0EAD8;
-  --tag-gratuit-text: #2A241C;
-  --tag-payant-bg: #FBEEE4;
-  --tag-payant-text: #8A4A1D;
-  --tag-payant-border: #F0D8C2;
+  --tag-gratuit-bg: #f0ead8;
+  --tag-gratuit-text: #2a241c;
+  --tag-payant-bg: #fbeee4;
+  --tag-payant-text: #8a4a1d;
+  --tag-payant-border: #f0d8c2;
 }
 
 [data-theme="dark"] {
-  --bg: #161B22;
-  --card-bg: #1F2733;
-  --card-border: #2E3947;
-  --text: #EDEBE6;
-  --text-muted: #8A94A3;
-  --btn-carte-bg: #FF6B4A;
-  --btn-carte-text: #161B22;
-  --search-bg: #1F2733;
-  --tag-gratuit-bg: #2A3441;
-  --tag-gratuit-text: #EDEBE6;
-  --tag-payant-bg: #3A2E17;
-  --tag-payant-text: #E0BC72;
-  --tag-payant-border: #4E3E20;
+  --bg: #161b22;
+  --card-bg: #1f2733;
+  --card-border: #2e3947;
+  --text: #edebe6;
+  --text-muted: #8a94a3;
+  --btn-carte-bg: #ff6b4a;
+  --btn-carte-text: #161b22;
+  --search-bg: #1f2733;
+  --tag-gratuit-bg: #2a3441;
+  --tag-gratuit-text: #edebe6;
+  --tag-payant-bg: #3a2e17;
+  --tag-payant-text: #e0bc72;
+  --tag-payant-border: #4e3e20;
 }
 
 body {
@@ -38,7 +40,9 @@ body {
   margin: 0;
   padding: 1.5rem;
   color: var(--text);
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .app {
@@ -65,7 +69,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: #3B5578;
+  background: #3b5578;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,7 +145,9 @@ body {
 }
 
 @media (max-width: 560px) {
-  .grid { grid-template-columns: 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -254,4 +260,3 @@ body {
 .carte-cachee {
   display: none;
 }
-
