@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Card } from "./card.jsx";
-import { SearchBar } from "./searchbar.jsx";
-import { FiltresPrix } from "./FiltresPrix.jsx";
+import { Card } from "./components/Card.jsx";
+import { SearchBar } from "./components/SearchBar.jsx";
+import { FiltresPrix } from "./components/FiltresPrix.jsx";
 
 export const App = () => {
   const [donnees, setDonnees] = useState([]);
@@ -33,6 +33,7 @@ export const App = () => {
     }
   };
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     chargerDonnees();
   }, []);
 
